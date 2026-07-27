@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">M02 短信轉寄</string>
+    <string name="intro">收到短信後立即經 SMTP 郵箱轉寄。平時不常駐，失敗時由系統排程重試。</string>
+    <string name="smtp_host">SMTP 伺服器</string>
+    <string name="smtp_port">SMTP 連接埠</string>
+    <string name="smtp_username">SMTP 使用者名稱（留空則同寄件郵箱）</string>
+    <string name="sender_email">寄件郵箱地址</string>
+    <string name="auth_code">SMTP 密碼／授權碼</string>
+    <string name="recipient_email">收件郵箱（留空則寄給自己）</string>
+    <string name="enabled">啟用自動轉寄</string>
+    <string name="save">儲存設定</string>
+    <string name="test">發送測試郵件</string>
+    <string name="status_not_configured">尚未完成設定</string>
+</resources>

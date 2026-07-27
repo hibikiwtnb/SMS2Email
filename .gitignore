@@ -1,0 +1,15 @@
+# Build outputs
+/build/
+
+# Local signing keys
+/keystore/
+*.jks
+*.keystore
+*.idsig
+
+# Local IDE and operating-system files
+/.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
