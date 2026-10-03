@@ -56,7 +56,7 @@ if (-not (Test-Path -LiteralPath $keystore)) {
     New-Item -ItemType Directory -Force -Path (Split-Path -Parent $keystore) | Out-Null
     & $keytool -genkeypair -keystore $keystore -storepass android -keypass android `
         -alias smsrelay -keyalg RSA -keysize 2048 -validity 10000 `
-        -dname 'CN=M02SmsRelay, OU=Local, O=Local, L=Local, ST=Local, C=XX'
+        -dname 'CN=SMS2Email, OU=Local, O=Local, L=Local, ST=Local, C=XX'
     if ($LASTEXITCODE -ne 0) { throw 'Debug keystore creation failed' }
 }
 

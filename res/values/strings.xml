@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">M02 短信轉寄</string>
+    <string name="app_name">短信轉寄</string>
     <string name="intro">收到短信後立即經 SMTP 郵箱轉寄。平時不常駐，失敗時由系統排程重試。</string>
     <string name="smtp_host">SMTP 伺服器</string>
     <string name="smtp_port">SMTP 連接埠</string>

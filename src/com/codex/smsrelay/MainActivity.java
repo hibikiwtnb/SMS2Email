@@ -45,7 +45,7 @@ public final class MainActivity extends Activity {
         content.setOrientation(LinearLayout.VERTICAL);
         content.setPadding(padding, padding, padding, padding);
 
-        TextView title = text("M02 短信轉寄", 24);
+        TextView title = text(getString(R.string.app_name), 24);
         title.setTextColor(Color.rgb(13, 71, 161));
         content.addView(title, matchWrap());
 
@@ -198,6 +198,7 @@ public final class MainActivity extends Activity {
             return;
         }
         statusView.setText("正在發送測試郵件…");
+        final String appName = getString(R.string.app_name);
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -210,8 +211,8 @@ public final class MainActivity extends Activity {
                             AppSettings.authCode(MainActivity.this),
                             AppSettings.sender(MainActivity.this),
                             AppSettings.recipient(MainActivity.this),
-                            "[M02 短信轉寄] 測試成功",
-                            "M02 已可經 SMTP 發送郵件。"
+                            "[" + appName + "] 測試成功",
+                            appName + " 已可經 SMTP 發送郵件。"
                     );
                     showResult("測試郵件已發送");
                 } catch (final Exception error) {

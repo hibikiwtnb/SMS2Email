@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.Locale;
 
 final class RelayWorker {
-    private static final String TAG = "M02SmsRelay";
+    private static final String TAG = "SmsRelay";
     private RelayWorker() {
     }
 
@@ -28,7 +28,7 @@ final class RelayWorker {
                             "yyyy-MM-dd HH:mm:ss",
                             Locale.getDefault()
                     ).format(new Date(item.receivedAt));
-                    String subject = "[M02 短信] " + item.sender;
+                    String subject = "[" + context.getString(R.string.app_name) + "] " + item.sender;
                     String body = "寄件號碼：" + item.sender
                             + "\n收到時間：" + time
                             + "\n\n"

@@ -52,7 +52,7 @@
 - 使用者名稱：完整 iCloud 郵箱地址
 - 密碼：Apple 帳號的 App 專用密碼
 
-部分郵件服務可能把自動轉寄的驗證碼郵件分類為垃圾郵件。請將誤判郵件標記為非垃圾郵件，或建立以 `[M02 短信]` 為條件的收件規則。
+部分郵件服務可能把自動轉寄的驗證碼郵件分類為垃圾郵件。請將誤判郵件標記為非垃圾郵件，或建立以 `[短信轉寄]` 為條件的收件規則。
 
 ## 建置
 
@@ -110,7 +110,7 @@ adb install -r .\build\sms-relay-debug.apk
 ## 專案結構
 
 ```text
-M02SmsRelay/
+SMS2Email/
 ├── AndroidManifest.xml
 ├── build.ps1
 ├── res/
