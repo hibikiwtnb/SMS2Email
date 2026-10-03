@@ -1,6 +1,6 @@
-# M02 SMS Relay
+# SMS2Email
 
-一個為低效能舊 Android 手機設計的極簡 SMS 即時郵件轉寄工具。APK 約 25 KB，不使用 Gradle、AndroidX、Compose、WebView、廣告、統計或第三方執行階段依賴。
+一個為低端 Android 手機設計的極簡 SMS 即時郵件轉寄工具。APK 約 25 KB，不使用 Gradle、AndroidX、Compose、WebView、廣告、統計或第三方執行階段依賴。
 
 ## 功能
 
